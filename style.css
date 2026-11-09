@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@300;400;500;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#10091f;color:white;font-family:Poppins,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 15% 20%,#542b79 0,transparent 35%),radial-gradient(circle at 85% 70%,#713c65 0,transparent 35%);z-index:-2}
+#particles{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:-1}
+.particle{position:absolute;bottom:-30px;color:#e9b8dc;opacity:.5;animation:floatUp linear infinite}
+@keyframes floatUp{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+.screen{min-height:100vh;display:flex;justify-content:center;align-items:center;padding:35px 18px}
+.intro{text-align:center;max-width:750px;animation:appear 1.5s ease}
+@keyframes appear{from{opacity:0;transform:translateY(35px)}to{opacity:1;transform:translateY(0)}}
+.small{color:#e9b9cf;letter-spacing:5px;font-size:11px;margin-bottom:25px}
+h1{font-family:'Playfair Display',serif;font-size:clamp(42px,8vw,85px);line-height:1.1;background:linear-gradient(120deg,#fff,#eac1d7,#d9adff);-webkit-background-clip:text;color:transparent}
+.intro p{color:#d4c4e0;line-height:2;margin:25px auto;max-width:520px;font-size:14px}
+button{border:1px solid #d6a9c6;padding:15px 32px;background:linear-gradient(120deg,#76469b,#a45e87);border-radius:40px;color:white;font-family:inherit;cursor:pointer;font-size:13px;letter-spacing:2px;transition:.3s;box-shadow:0 0 25px #a45e8750}
+button:hover{transform:translateY(-4px) scale(1.04);box-shadow:0 0 35px #d69acb80}
+#main{display:none}
+.header{text-align:center;padding:75px 20px 35px}
+.header h2{font-family:'Playfair Display',serif;font-size:clamp(35px,6vw,65px);color:#f0c8df}
+.header p{color:#c5b2d2;font-size:13px;margin-top:15px}
+.counter{margin:30px auto;color:#e8b9d2;letter-spacing:3px;font-size:12px}
+.progress{width:min(350px,85%);height:5px;background:#ffffff20;margin:15px auto;border-radius:20px;overflow:hidden}
+#bar{height:100%;width:0%;background:linear-gradient(90deg,#b77bda,#f4c1d9);transition:.4s}
+.grid{width:min(1100px,92%);margin:20px auto 50px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+.sorry-card{min-height:125px;padding:20px 12px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px;border:1px solid #ffffff25;border-radius:17px;background:linear-gradient(145deg,#ffffff13,#ffffff05);backdrop-filter:blur(12px);text-align:center;animation:appear .6s ease both;transition:.3s}
+.sorry-card:hover{transform:translateY(-6px) rotate(-1deg);border-color:#edb9d6;background:#a76a8b30}
+.number{font-size:10px;letter-spacing:3px;color:#d7a9c8}
+.words{font-family:'Playfair Display',serif;font-size:22px;color:#fff0fa}
+.style1 .words{font-weight:bold;color:#f4c4df}.style2 .words{font-style:italic;color:#d9b5ff}.style3 .words{font-family:Poppins;font-size:17px;letter-spacing:3px}.style4 .words{text-shadow:0 0 15px #ff9bce}.style5 .words{font-size:28px;color:#e4c0ff}.style6 .words{font-family:cursive;color:#ffd6e8}.style7 .words{transform:rotate(-5deg)}.style8 .words{letter-spacing:5px;color:#f7c58f}
+.controls{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;padding:0 15px 70px}
+.letter{display:none;width:min(650px,90%);margin:0 auto 100px;padding:40px 28px;text-align:center;border:1px solid #d8a9c550;border-radius:25px;background:linear-gradient(140deg,#ffffff13,#ffffff05);box-shadow:0 0 50px #a35a8730;animation:appear 1s ease}
+.letter h2{font-family:'Playfair Display',serif;font-size:38px;color:#efc1db;margin-bottom:25px}
+.letter p{color:#e0d1e8;font-size:14px;line-height:2.2}
+.letter .signature{color:#f2bedb;margin-top:30px;font-family:'Playfair Display',serif;font-size:23px}
+footer{text-align:center;padding:30px;color:#927c9e;font-size:11px;letter-spacing:2px}
+@media(max-width:480px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.sorry-card{min-height:115px;padding:14px 8px}.words{font-size:18px}}
+
+.tiny-note { font-size: 11px; color: #a98caf; }
